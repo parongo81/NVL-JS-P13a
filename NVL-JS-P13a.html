@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head> <meta charset="utf-8">
+	<title>FUNCION NUMEROS PRIMOS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Primos(n){
+			for(i = 0; i <= n;i++){
+				var primo = 0;
+				for(numero = 1; numero <= i; numero++){
+					var resto = i % numero;
+					if(resto === 0){
+					primo++
+					}
+				}
+				if (primo === 2){
+				console.log(i)				
+				}
+			}
+		}
+		Primos(50)
+	</script>
+
+</body>
+</html>	
+
+
+
+	
